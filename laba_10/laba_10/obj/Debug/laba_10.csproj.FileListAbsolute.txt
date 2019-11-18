@@ -1,0 +1,10 @@
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\bin\Debug\laba_10.exe.config
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\bin\Debug\laba_10.exe
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\bin\Debug\laba_10.pdb
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.csprojAssemblyReference.cache
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.Form1.resources
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.Properties.Resources.resources
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.csproj.GenerateResource.cache
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.csproj.CoreCompileInputs.cache
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.exe
+C:\Users\mihai\Documents\Проекты 3 семестр\WF_app\laba_10\laba_10\obj\Debug\laba_10.pdb
