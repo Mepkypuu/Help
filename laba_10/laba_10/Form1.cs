@@ -15,6 +15,7 @@ namespace laba_10
         int temp;
         int index; // yellow - 1, blue - 2, green - 3, red - 4.
         Random rand = new Random();
+
         public Form1()
         {
             InitializeComponent();
@@ -26,22 +27,20 @@ namespace laba_10
             timer1.Enabled = false;
             timer1.Tick += timer1_Tick;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (var item in this.Controls)
+            foreach (var button in groupBox1.Controls.OfType<Button>())
             {
-                if (item is Button)
-                {
-                    if (((Button)item).Text == ".")
-                        ((Button)item).Click += CommonBtn_Click;
-                }
+                if (button.Text == ".")
+                    button.Click += CommonBtn_Click;
             }
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.PerformStep();
@@ -53,31 +52,30 @@ namespace laba_10
                 MessageBox.Show("Время вышло!");
                 this.Close();
             }
-            if(temp >= 10)
+
+            if (temp >= 10)
                 label2.Text = (temp.ToString());
             else
-            label2.Text = ("0" + temp.ToString());          
-           /* if(progressBar1.Value == progressBar1.Maximum)
-            {
-                MessageBox.Show("Бомба взорвалась");
-                timer1.Stop();
-                progressBar1.Value = progressBar1.Minimum;
-                return;
-            }*/
+                label2.Text = ("0" + temp.ToString());
+            /* if(progressBar1.Value == progressBar1.Maximum)
+             {
+                 MessageBox.Show("Бомба взорвалась");
+                 timer1.Stop();
+                 progressBar1.Value = progressBar1.Minimum;
+                 return;
+             }*/
         }
 
         private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-
             label2.Text = "20";
             groupBox1.Visible = true;
             progressBar1.Value = progressBar1.Minimum;
-            if(numericUpDown1.Value == 1)
+            if (numericUpDown1.Value == 1)
             {
                 button3.Visible = true;
                 button2.Visible = false;
@@ -85,7 +83,8 @@ namespace laba_10
                 button4.Visible = false;
                 index = rand.Next(1, 1);
             }
-            if(numericUpDown1.Value == 2)
+
+            if (numericUpDown1.Value == 2)
             {
                 button1.Visible = false;
                 button4.Visible = false;
@@ -93,7 +92,8 @@ namespace laba_10
                 button2.Visible = true;
                 index = rand.Next(1, 2);
             }
-            if(numericUpDown1.Value == 3 )
+
+            if (numericUpDown1.Value == 3)
             {
                 button4.Visible = false;
                 button3.Visible = true;
@@ -101,7 +101,8 @@ namespace laba_10
                 button1.Visible = true;
                 index = rand.Next(1, 3);
             }
-            if(numericUpDown1.Value == 4)
+
+            if (numericUpDown1.Value == 4)
             {
                 button3.Visible = true;
                 button2.Visible = true;
@@ -109,38 +110,29 @@ namespace laba_10
                 button4.Visible = true;
                 index = rand.Next(1, 4);
             }
-            
-            timer1.Enabled = true;           
+
+            timer1.Enabled = true;
         }
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-  
-            
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-    
-           
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-     
-           
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-        
-           
         }
 
         private void CommonBtn_Click(object sender, EventArgs e)
         {
-            
-            if(((Button)sender).BackColor == Color.Yellow )
+            if (((Button) sender).BackColor == Color.Yellow)
             {
                 timer1.Stop();
                 MessageBox.Show("Бомба разминирована! Победа");
@@ -151,9 +143,6 @@ namespace laba_10
                 MessageBox.Show("Бомба взорвалась! Поражение");
                 groupBox1.Visible = false;
             }
-
         }
-
-       
     }
 }
